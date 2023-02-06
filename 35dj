@@ -1,0 +1,27 @@
+#!/bin/sh
+
+# take two numbers from user
+echo "Enter two numbers: "
+read a b
+
+# compute subtraction result
+result=`expr "$a - $b" | bc`
+
+# print output
+echo "Result: $result"
+Output:
+
+$ sh subtract.sh 
+Enter two numbers: 
+10 9
+Result: 1
+
+$ sh subtract.sh 
+Enter two numbers: 
+9 10
+Result: -1
+
+$ sh subtract.sh 
+Enter two numbers: 
+10.5 9.1
+Result: 1.4
